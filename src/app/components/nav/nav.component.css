@@ -1,0 +1,32 @@
+.container {
+    height: 100%;
+    /* position: relative; */
+}
+
+.sidenav{
+    width: 13rem;
+    color: white;
+    background-color: #a256db;
+}
+
+img{
+    width: 75%;
+    border-radius: 50%;
+    margin: .8rem auto 1rem auto;
+    margin-left: 1rem;
+}
+
+.sidenav a{
+    color: white;
+}
+
+.sidenav i {
+    margin-right: 0.8rem;
+    /* vertical-align: middle; */
+}
+
+.menu{
+    margin: 1rem 0 0 1rem;
+    color: white;
+    background-color: #9243D0;
+}

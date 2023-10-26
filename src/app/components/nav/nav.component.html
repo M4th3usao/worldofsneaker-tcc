@@ -1,0 +1,55 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <img src="assets/img/logo-min.png" alt="Imagem de navegação">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="home">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+
+            <a mat-list-item routerLink="categorias">
+                <i class="material-icons">list</i>
+                Categorias
+            </a>
+
+            <a mat-list-item routerLink="modelos">
+                <i class="material-icons">store</i>
+                Sneakers
+            </a>
+
+            <a mat-list-item routerLink="funcionarios">
+                <i class="material-icons">supervisor_account</i>
+                Funcionários
+            </a>
+            
+            <a mat-list-item routerLink="fornecedores">
+                <i class="material-icons">account_circle </i>
+                Fornecedores
+            </a>
+
+            <a mat-list-item routerLink="notificacoes">
+                <i class="material-icons">email</i>
+                    Notificações
+            </a>
+
+            <!-- <a mat-list-item href="https://github.com/World-Of-Sneakers/wfsneakers-api" target="_blank">
+                <i class="material-icons">code</i>
+                Documentação
+            </a> -->
+
+            <a mat-list-item (click)="logout()">
+                <i class="material-icons">logout</i>
+                Logout
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <app-header></app-header>
+      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

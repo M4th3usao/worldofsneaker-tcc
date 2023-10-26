@@ -1,0 +1,25 @@
+<div class="container">
+    <div>
+        <h1>Bem vindo </h1>
+        <h1>ao</h1>
+        <h1>World Of Sneakers</h1>
+    </div>
+    
+    <form class="form mat-elevation-z8">
+
+        <h2>Login</h2>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input [formControl]="email" required [(ngModel)]="creds.email" name="email" matInput placeholder="Digite o Email">
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Senha</mat-label>
+          <input [formControl]="senha" required [(ngModel)]="creds.senha" name="senha" type="password" matInput placeholder="Digite a senha">
+        </mat-form-field>
+
+        <button  (click)="logar()" class="mat-elevation-z4" mat-stroked-button color="basic">Entrar</button>
+        <!-- <button [disabled]="!validaCampos()" (click)="login()" class="mat-elevation-z4" mat-stroked-button color="basic">Entrar</button> -->
+        </form>
+</div>

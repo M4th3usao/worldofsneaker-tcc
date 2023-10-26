@@ -1,0 +1,90 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Deletar  Fornecedor</h1>
+    </form>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome Fantasia</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.nomeFantasia"
+        name="nomeFantasia"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>CNPJ</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.cnpj"
+        name="cnpj"
+        [disabled]="true"
+        matInput 
+        mask="00.000.000/0001-00"
+        >
+        <mat-icon matSuffix>pin</mat-icon>
+      </mat-form-field>
+
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.email"
+        name="email"
+        [disabled]="true"
+        matInput
+        >
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Razão Social</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.razaoSocial"
+        name="razaoSocial"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Inscrição Estadual</mat-label>
+        <input 
+        [(ngModel)]="fornecedor. inscricaoEstadual"
+        name=" inscricaoEstadual"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+   
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.telefone"
+        name="telefone"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Informação</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.informacao"
+        name="informacao"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <button (click)="delete()" mat-flat-button class="fullWidth" color="primary">Deletar</button>
+    <button routerLink="../../" mat-flat-button class="fullWidth" color="warn">Cancelar</button>
+
+    <p class="fullWidth">By World Of Sneakers</p>
+</div>

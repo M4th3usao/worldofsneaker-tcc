@@ -1,0 +1,101 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Cadastrar Fornecedor</h1>
+    </form>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.nomeFantasia"
+        name="nomeFantasia"
+        [formControl]="nomeFantasia"
+        required
+        matInput 
+        placeholder="Ex.. Lacoste"
+        maxlength="50">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>CNPJ</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.cnpj"
+        name="cnpj"
+        [formControl]="cnpj"
+        required
+        matInput 
+        placeholder="Ex.. XX. XXX. XXX/0001-XX"
+        mask="00.000.000/0001-00"
+        >
+        <mat-icon matSuffix>pin</mat-icon>
+      </mat-form-field>
+
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.email"
+        name="email"
+        [formControl]="email"
+        required
+        matInput 
+        placeholder="luciano.veigar@gmail.com">
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Razão Social</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.razaoSocial"
+        name="razaoSocial"
+        [formControl]="razaoSocial"
+        required
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Inscricão Estadual</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.razaoSocial"
+        name="inscricaoEstadual"
+        [formControl]="inscricaoEstadual"
+        required
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+   
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.telefone"
+        name="telefone"
+        [formControl]="telefone"
+        required
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Informação</mat-label>
+        <input 
+        [(ngModel)]="fornecedor.informacao"
+        name="informacao"
+        [formControl]="informacao"
+        required
+        matInput  
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <button (click)="create()" [disabled]="!validaCampos()" mat-flat-button class="fullWidth" color="primary">Cadastrar</button>
+    <button routerLink="../" mat-flat-button class="fullWidth" color="warn">Cancelar</button>
+
+    <p class="fullWidth">By World Of Sneakers</p>
+</div>

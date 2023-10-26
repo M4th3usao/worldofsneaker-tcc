@@ -41,6 +41,17 @@ import { SneakerListComponent } from './components/sneaker/sneaker-list/sneaker-
 import { SneakerCreateComponent } from './components/sneaker/sneaker-create/sneaker-create.component';
 import { SneakerUpdateComponent } from './components/sneaker/sneaker-update/sneaker-update.component';
 import { SneakerDetailsComponent } from './components/sneaker/sneaker-details/sneaker-details.component';
+import { FornecedorListComponent } from './components/fornecedor/fornecedor-list/fornecedor-list.component';
+import { FornecedorCreateComponent } from './components/fornecedor/fornecedor-create/fornecedor-create.component';
+import { FornecedorDeleteComponent } from './components/fornecedor/fornecedor-delete/fornecedor-delete.component';
+import { FornecedorDetailsComponent } from './components/fornecedor/fornecedor-details/fornecedor-details.component';
+import { FornecedorUpdateComponent } from './components/fornecedor/fornecedor-update/fornecedor-update.component';
+import { FuncionarioListComponent } from './components/funcionario/funcionario-list/funcionario-list.component';
+import { FuncionarioCreateComponent } from './components/funcionario/funcionario-create/funcionario-create.component';
+import { FuncionarioDeleteComponent } from './components/funcionario/funcionario-delete/funcionario-delete.component';
+import { FuncionarioDetailsComponent } from './components/funcionario/funcionario-details/funcionario-details.component';
+import { FuncionarioUpdateComponent } from './components/funcionario/funcionario-update/funcionario-update.component';
+import { NotificacoesComponent } from './components/notificacoes/notificacoes.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +67,18 @@ import { SneakerDetailsComponent } from './components/sneaker/sneaker-details/sn
     SneakerListComponent,
     SneakerCreateComponent,
     SneakerUpdateComponent,
-    SneakerDetailsComponent
+    SneakerDetailsComponent,
+    FornecedorListComponent,
+    FornecedorCreateComponent,
+    FornecedorDeleteComponent,
+    FornecedorDetailsComponent,
+    FornecedorUpdateComponent,
+    FuncionarioListComponent,
+    FuncionarioCreateComponent,
+    FuncionarioDeleteComponent,
+    FuncionarioDetailsComponent,
+    FuncionarioUpdateComponent,
+    NotificacoesComponent
   ],
   imports: [
     BrowserModule,

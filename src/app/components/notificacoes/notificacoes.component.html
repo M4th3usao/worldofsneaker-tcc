@@ -1,0 +1,50 @@
+<div class="container mat-elevation-z8">
+
+    <form class="form">
+        <h1>Enviar Email</h1>
+    </form>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Destinatário</mat-label>
+        <input 
+        [(ngModel)]="notificacoes.to"
+        name="to"
+        [formControl]="to"
+        required
+        matInput 
+        placeholder="matheus.rico17@gmail.com"
+        maxlength="50">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Assunto</mat-label>
+        <input 
+        [(ngModel)]="notificacoes.subject"
+        name="subject"
+        [formControl]="subject"
+        required
+        matInput 
+        placeholder="Reunião Geral"
+        maxlength="50">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Corpo do E-mail</mat-label>
+        <textarea
+        [(ngModel)]="notificacoes.text"
+        name="text"
+        [formControl]="text"
+        required
+        matInput 
+        placeholder="Corpo do email..."
+        maxlength="1000"></textarea>
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+  
+    <button (click)="sendEmail()" [disabled]="!validaCampos()" mat-flat-button class="fullWidth" color="primary" >Enviar E-mail</button>
+    <button routerLink="../" mat-flat-button class="fullWidth" color="warn">Cancelar</button>
+  
+    <p class="fullWidth">By Matheus Henrique</p>
+  </div>

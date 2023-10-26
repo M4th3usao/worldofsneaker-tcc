@@ -1,0 +1,61 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Deletar  Funcionário</h1>
+    </form>
+
+    <section class="section">
+        <mat-checkbox [disabled]="true"  class="margin" color="primary">Administrador</mat-checkbox>
+        <mat-checkbox [disabled]="true" [checked]="true" class="margin" color="primary">Funcionário</mat-checkbox>
+    </section>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="funcionario.nome"
+        name="nome"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>CPF</mat-label>
+        <input 
+        [(ngModel)]="funcionario.cpf"
+        name="cpf"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>pin</mat-icon>
+      </mat-form-field>
+
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input 
+        [(ngModel)]="funcionario.email"
+        name="email"
+        [disabled]="true"
+        matInput
+        >
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input 
+        [(ngModel)]="funcionario.senha"
+        name="senha"
+        [disabled]="true"
+        matInput 
+        type="password"
+        >
+        <mat-icon matSuffix>password</mat-icon>
+    </mat-form-field>
+
+    <button (click)="delete()" mat-flat-button class="fullWidth" color="primary">Deletar</button>
+    <button routerLink="../../" mat-flat-button class="fullWidth" color="warn">Cancelar</button>
+
+    <p class="fullWidth">By World Of Sneakers</p>
+</div>

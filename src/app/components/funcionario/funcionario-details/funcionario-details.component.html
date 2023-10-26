@@ -1,0 +1,64 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Detalhes do Funcionário</h1>
+    </form>
+      
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Perfil</mat-label>
+        <input 
+        [(ngModel)]="funcionario.perfis"
+        name="perfis"
+        [disabled]="true"
+        matInput 
+        placeholder="Ex.. Funcionário"
+        maxlength="50">
+    </mat-form-field>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="funcionario.nome"
+        name="nome"
+        [disabled]="true"
+        matInput 
+        placeholder="Ex.. Luciano Veigar"
+        maxlength="50">
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>CPF</mat-label>
+        <input 
+        [(ngModel)]="funcionario.cpf"
+        name="cpf"
+        [disabled]="true"
+        matInput 
+        placeholder="Ex.. 000.000.000-00"
+        >
+      </mat-form-field>
+
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input 
+        [(ngModel)]="funcionario.email"
+        name="email"
+        [disabled]="true"
+        matInput 
+        placeholder="luciano.veigar@gmail.com">
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input 
+        [(ngModel)]="funcionario.senha"
+        name="senha"
+        [disabled]="true"
+        type="password" 
+        matInput 
+        placeholder="Ex.. 1234">
+    </mat-form-field>
+
+    <button routerLink="../../" mat-flat-button class="fullWidth" color="warn">Voltar</button>
+
+    <p class="fullWidth">By World Of Sneakers</p>
+</div>

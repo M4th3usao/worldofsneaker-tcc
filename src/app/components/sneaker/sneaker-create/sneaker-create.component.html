@@ -1,0 +1,115 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Cadastrar Sneaker</h1>
+    </form>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="sneaker.nome"
+        name="nome"
+        [formControl]="nome"
+        required
+        matInput 
+        placeholder="Ex.. Adidas Run"
+        maxlength="50">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+    
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label> Marca </mat-label>
+        <input 
+        [(ngModel)]="sneaker.marca"
+        name="marca"
+        [formControl]="marca"
+        required
+        matInput 
+        placeholder="Ex... Adidas">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label> Preço </mat-label>
+        <input 
+        [(ngModel)]="sneaker.preco"
+        name="preco"
+        [formControl]="preco"
+        required
+        type="number"
+        matInput 
+        placeholder="Ex... R$289,90">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <div class="options-create">
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Selecione um Fornecedor</mat-label>
+            <mat-select [(ngModel)]="sneaker.fornecedor" name="fornecedor" [formControl]="nomeFornecedor" required>
+                <mat-option *ngFor="let fornec of fornecedor" value="{{fornec.id}}">{{fornec.nomeFantasia}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Selecione uma Categoria</mat-label>
+            <mat-select [(ngModel)]="sneaker.categoria" name="categoria" [formControl]="nomeCategoria" required>
+                <mat-option *ngFor="let cat of categoria" value="{{cat.id}}">{{cat.nome}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Tamanho</mat-label>
+        <input 
+        [(ngModel)]="sneaker.tamanho"
+        name="tamanho"
+        [formControl]="tamanho"
+        required
+        matInput 
+        placeholder="42"
+        maxlength="2"
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Cor</mat-label>
+        <input 
+        [(ngModel)]="sneaker.cor"
+        name="cor"
+        [formControl]="cor"
+        required 
+        matInput 
+        placeholder="Ex.. Roxo">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+    
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Quantidade</mat-label>
+        <input 
+        [(ngModel)]="sneaker.quantidade"
+        name="quantidade"
+        [formControl]="quantidade"
+        required 
+        matInput 
+        placeholder="Ex.. 52"
+        maxlength="10">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <input 
+        [(ngModel)]="sneaker.descricao"
+        name="descricao"
+        [formControl]="descricao"
+        required 
+        matInput 
+        placeholder="Ex.. Calçado versátil"
+        maxlength="500">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <button (click)="create()" [disabled]="!validaCampos()" mat-flat-button class="fullWidth" color="primary">Cadastrar</button>
+    <button routerLink="../" mat-flat-button class="fullWidth" color="warn">Cancelar</button>
+
+    <p>By World Of Sneakers</p>
+</div>

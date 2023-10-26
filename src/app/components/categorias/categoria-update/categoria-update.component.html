@@ -1,0 +1,37 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Atualizar  Categorias</h1>
+    </form>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="categorias.nome"
+        name="nome"
+        [formControl]="nome"
+        required
+        matInput 
+        placeholder="Ex.. Tênis Esportivos"
+        maxlength="50">
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <input 
+        [(ngModel)]="categorias.descricao"
+        name="descricao"
+        [formControl]="descricao"
+        required
+        matInput 
+        placeholder="Ex.. Tênis Esportivos"
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+      </mat-form-field>
+
+
+    <button (click)="update()" [disabled]="!validaCampos()" mat-flat-button class="fullWidth" color="primary">Atualizar</button>
+    <button routerLink="../../" mat-flat-button class="fullWidth" color="warn">Cancelar</button>
+
+    <p class="fullWidth">By World Of Sneakers</p>
+</div>

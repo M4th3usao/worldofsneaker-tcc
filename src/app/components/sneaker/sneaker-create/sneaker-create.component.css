@@ -1,0 +1,44 @@
+.container{
+    width: 35rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: .6rem;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+button{
+    margin-top: .5rem;
+}
+
+p{
+    margin-top: 1.5rem;
+    opacity: .5;
+    font-style: italic;
+}
+
+mat-icon{
+    opacity: .8;
+}
+
+.options-create{
+    display: flex;
+    justify-content: space-between;
+}
+
+.options-create mat-form-field{
+    width: 49%;
+}

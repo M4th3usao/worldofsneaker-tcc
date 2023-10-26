@@ -1,0 +1,109 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+        <h1>Detalhes do Sneaker</h1>
+    </form>
+  
+    <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input 
+        [(ngModel)]="sneaker.nome"
+        name="nome"
+        [disabled]="true"
+        matInput 
+        >
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Marca</mat-label>
+        <input 
+        [(ngModel)]="sneaker.marca"
+        name="marca"
+        [disabled]="true"
+        matInput 
+        >
+      </mat-form-field>
+
+      <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label> Preço </mat-label>
+        <input 
+        [(ngModel)]="sneaker.preco"
+        name="preco"
+        [disabled]="true"
+        matInput 
+        >
+        <mat-icon matSuffix>border_color</mat-icon>
+    </mat-form-field>
+
+    <div class="options">
+        <mat-form-field  class="fullWidth" appearance="fill">
+            <mat-label>Fornecedor</mat-label>
+            <input 
+            [(ngModel)]="sneaker.nomeFornecedor"
+            name="fornecedor"
+            [disabled]="true"
+            type="fornecedor" 
+            matInput 
+            >
+        </mat-form-field>
+
+        <mat-form-field  class="fullWidth" appearance="fill">
+            <mat-label>Fornecedor</mat-label>
+            <input 
+            [(ngModel)]="sneaker.nomeCategoria"
+            name="categoria"
+            [disabled]="true"
+            type="categoria" 
+            matInput 
+            >
+        </mat-form-field>
+    </div>
+  
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Tamanho</mat-label>
+        <input 
+        [(ngModel)]="sneaker.tamanho"
+        name="tamanho"
+        [disabled]="true"
+        type="tamanho" 
+        matInput 
+        >
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Cor</mat-label>
+        <input 
+        [(ngModel)]="sneaker.cor"
+        name="cor"
+        [disabled]="true"
+        type="cor" 
+        matInput 
+        >
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Quantidade</mat-label>
+        <input 
+        [(ngModel)]="sneaker.quantidade"
+        name="quantidade"
+        [disabled]="true"
+        type="quantidade" 
+        matInput
+        >
+    </mat-form-field>
+
+    <mat-form-field  class="fullWidth" appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <input 
+        [(ngModel)]="sneaker.descricao"
+        name="descricao"
+        [disabled]="true"
+        type="descricao"
+        matInput 
+        >
+    </mat-form-field>
+
+    <button routerLink="../../" mat-flat-button class="fullWidth" color="warn">Voltar</button>
+
+    <p class="fullWidth">By World Of Sneakers</p>
+</div>

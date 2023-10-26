@@ -25,6 +25,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 
+//components module
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -32,6 +33,14 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { ToastrModule } from 'ngx-toastr';
+import { CategoriasListComponent } from './components/categorias/categorias-list/categorias-list.component';
+import { CategoriaCreateComponent } from './components/categorias/categoria-create/categoria-create.component';
+import { CategoriaUpdateComponent } from './components/categorias/categoria-update/categoria-update.component';
+import { CategoriaDetailsComponent } from './components/categorias/categoria-details/categoria-details.component';
+import { SneakerListComponent } from './components/sneaker/sneaker-list/sneaker-list.component';
+import { SneakerCreateComponent } from './components/sneaker/sneaker-create/sneaker-create.component';
+import { SneakerUpdateComponent } from './components/sneaker/sneaker-update/sneaker-update.component';
+import { SneakerDetailsComponent } from './components/sneaker/sneaker-details/sneaker-details.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +48,15 @@ import { ToastrModule } from 'ngx-toastr';
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    CategoriasListComponent,
+    CategoriaCreateComponent,
+    CategoriaUpdateComponent,
+    CategoriaDetailsComponent,
+    SneakerListComponent,
+    SneakerCreateComponent,
+    SneakerUpdateComponent,
+    SneakerDetailsComponent
   ],
   imports: [
     BrowserModule,

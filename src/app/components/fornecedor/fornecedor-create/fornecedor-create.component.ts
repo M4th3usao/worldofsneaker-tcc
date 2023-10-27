@@ -46,7 +46,7 @@ export class FornecedorCreateComponent {
       this.router.navigate(['fornecedores']);
     }, ex => {
       if(ex.error.status === 500){
-          this.toast.error('Número do Cadastro de Pessoa Física (CPF) brasileiro inválido!');
+          this.toast.error('Número do CNPJ é inválido!');
         
       }else{
         this.toast.error(ex.error.message);
@@ -55,7 +55,7 @@ export class FornecedorCreateComponent {
   }
 
   validaCampos(): boolean{
-    return this.nomeFantasia.valid && this.cnpj.valid 
+    return this.nomeFantasia.valid 
     && this.email.valid
   }
 

@@ -55,8 +55,7 @@ export class FornecedorCreateComponent {
   }
 
   validaCampos(): boolean{
-    return this.nomeFantasia.valid && this.cnpj.valid 
-    && this.email.valid
+    return this.nomeFantasia.valid && this.email.valid
   }
 
 }

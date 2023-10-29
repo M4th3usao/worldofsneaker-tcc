@@ -25,7 +25,7 @@
         required
         matInput 
         placeholder="Ex.. 00.000.000/0001-00"
-        mask="00.000.000/0001-00"
+        mask="CPF_CNPJ"
         >
         <mat-icon matSuffix>pin</mat-icon>
       </mat-form-field>
@@ -52,6 +52,7 @@
         [formControl]="razaoSocial"
         required
         matInput 
+        placeholder="Lacoste LTDA"
         >
         <mat-icon matSuffix>border_color</mat-icon>
     </mat-form-field>
@@ -64,7 +65,9 @@
         name="inscricaoEstadual"
         [formControl]="inscricaoEstadual"
         required
-        matInput 
+        matInput
+        placeholder="037.796.100.018" 
+        mask="000.000.000.000"
         >
         <mat-icon matSuffix>border_color</mat-icon>
     </mat-form-field>
@@ -77,6 +80,8 @@
         [formControl]="telefone"
         required
         matInput 
+        placeholder="(11) 2880-4140"
+        mask="(00)0000-0000"
         >
         <mat-icon matSuffix>border_color</mat-icon>
     </mat-form-field>

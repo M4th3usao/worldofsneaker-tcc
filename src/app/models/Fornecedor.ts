@@ -3,7 +3,6 @@ export interface Fornecedor{
     nomeFantasia: string;
     cnpj: string;
     email: string;
-    // endereco: string;
     razaoSocial: string;
 	inscricaoEstadual: string;
 	telefone: string;

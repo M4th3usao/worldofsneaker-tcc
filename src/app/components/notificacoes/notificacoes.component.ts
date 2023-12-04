@@ -32,11 +32,16 @@ export class NotificacoesComponent {
   ngOnInit(): void{}
 
   sendEmail(): void{
-    this.service.sendEmail(this.notificacoes).subscribe(response => {
-      this.toast.success('Email enviado com sucesso:', 'Enviado');
+    this.service.sendEmail(this.notificacoes).subscribe(() => {
+      this.toast.success('Email enviado com sucesso!', 'Enviado');
       this.router.navigate(['notificacoes']);
-    }, error => {
-      this.toast.error(error.error.message);
+    }, ex => {
+      if(ex.error.status){
+          this.toast.error('Email inválida');
+        
+      }else{
+        this.toast.success('Email enviado com sucesso!');
+      }
     });
   }
 

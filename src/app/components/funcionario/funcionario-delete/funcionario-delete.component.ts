@@ -48,7 +48,7 @@ export class FuncionarioDeleteComponent {
           this.toast.error('Número do Cadastro de Pessoa Física (CPF) brasileiro inválido!');
         
       }else{
-        this.toast.error(ex.error.message);
+        this.toast.error("Ação não autorizada, verifique com  o Administrador!");
       }
     })
   }

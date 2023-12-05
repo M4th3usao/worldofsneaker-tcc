@@ -43,7 +43,6 @@ import { SneakerUpdateComponent } from './components/sneaker/sneaker-update/snea
 import { SneakerDetailsComponent } from './components/sneaker/sneaker-details/sneaker-details.component';
 import { FornecedorListComponent } from './components/fornecedor/fornecedor-list/fornecedor-list.component';
 import { FornecedorCreateComponent } from './components/fornecedor/fornecedor-create/fornecedor-create.component';
-import { FornecedorDeleteComponent } from './components/fornecedor/fornecedor-delete/fornecedor-delete.component';
 import { FornecedorDetailsComponent } from './components/fornecedor/fornecedor-details/fornecedor-details.component';
 import { FornecedorUpdateComponent } from './components/fornecedor/fornecedor-update/fornecedor-update.component';
 import { FuncionarioListComponent } from './components/funcionario/funcionario-list/funcionario-list.component';
@@ -70,7 +69,6 @@ import { NotificacoesComponent } from './components/notificacoes/notificacoes.co
     SneakerDetailsComponent,
     FornecedorListComponent,
     FornecedorCreateComponent,
-    FornecedorDeleteComponent,
     FornecedorDetailsComponent,
     FornecedorUpdateComponent,
     FuncionarioListComponent,

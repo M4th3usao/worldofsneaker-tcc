@@ -15,7 +15,6 @@ import { SneakerDetailsComponent } from './components/sneaker/sneaker-details/sn
 import { NotificacoesComponent } from './components/notificacoes/notificacoes.component';
 import { FornecedorDetailsComponent } from './components/fornecedor/fornecedor-details/fornecedor-details.component';
 import { FornecedorUpdateComponent } from './components/fornecedor/fornecedor-update/fornecedor-update.component';
-import { FornecedorDeleteComponent } from './components/fornecedor/fornecedor-delete/fornecedor-delete.component';
 import { FornecedorCreateComponent } from './components/fornecedor/fornecedor-create/fornecedor-create.component';
 import { FornecedorListComponent } from './components/fornecedor/fornecedor-list/fornecedor-list.component';
 import { FuncionarioDetailsComponent } from './components/funcionario/funcionario-details/funcionario-details.component';
@@ -50,7 +49,6 @@ const routes: Routes = [
       {path: 'fornecedores', component: FornecedorListComponent},
       {path: 'fornecedores/create', component: FornecedorCreateComponent},
       {path: 'fornecedores/update/:id', component: FornecedorUpdateComponent},
-      {path: 'fornecedores/delete/:id', component: FornecedorDeleteComponent},
       {path: 'fornecedores/details/:id', component: FornecedorDetailsComponent},
 
       {path: 'notificacoes', component: NotificacoesComponent},

@@ -46,10 +46,10 @@ export class CategoriaUpdateComponent {
       this.router.navigate(['categorias']);
     }, ex => {
       if(ex.error.status === 500){
-          this.toast.error('Número do Cadastro de Pessoa Física (CPF) brasileiro inválido!');
+          this.toast.error('A Categoria não foi atualizada!');
         
       }else{
-        this.toast.error(ex.error.message);
+        this.toast.error("Ação não autorizada, verifique com  o Administrador!");
       }
     })
   }
